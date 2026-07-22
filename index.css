@@ -1,0 +1,126 @@
+    /* Reset & Variables */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        
+        .recipe-card {
+            background-color: #ffffff;
+            max-width: 736px;
+            width: 100%;
+            border-radius: 24px;
+            padding: clamp(24px, 5vw, 40px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        
+        .recipe-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        
+        h1 {
+            font-family: 'Young Serif', serif;
+            color: hwb(24 17% 81%);
+            font-size: clamp(1.8rem, 4vw, 2.3rem); 
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-family: 'Young Serif', serif;
+            color: hsl(14, 45%, 36%);
+            font-size: clamp(1.4rem, 3vw, 1.75rem);
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        
+        .prep-time-box {
+            background-color:  #fff7fb;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+
+        .prep-time-box h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #7a284e;
+            margin-bottom: 12px;
+        }
+
+       
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 8px;
+        }
+
+        li::marker {
+            color:hsl(14, 45%, 36%);
+            font-weight: bold;
+        }
+
+        .prep-time-box li::marker {
+            color: #7a284e;
+        }
+
+       
+        hr {
+            border: none;
+            border-bottom: 1px solid var(#e3ddd7);
+            margin: 30px 0;
+        }
+
+      
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        .nutrition-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(#e3ddd7);
+            width: 50%;
+        }
+
+        .nutrition-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .nutrition-table td:last-child {
+            color:hsl(14, 45%, 36%);
+            font-weight: 700;
+        }
+
